@@ -33,20 +33,15 @@ for (let link of links) {
 /*generateTitleLinks*/
 const optArticleSelector = '.post',
   optTitleSelector = '.post-title',
-  optTitleListSelector = '.titles',
-  optArticleTagsSelector = '.post-tags .list',
-  optArticleAuthorSelector = '.post-author',
-  optAuthorRightList = '.sidebar .authors';
+  optTitleListSelector = '.titles';
 
-function generateTitleLinks(customSelector = '') {
+function generateTitleLinks() {
   /* remove contents of titleList */
   const titleList = document.querySelector(optTitleListSelector);
   titleList.innerHTML = '';
 
   /* for each article */
-  const articles = document.querySelectorAll(
-    optArticleSelector + customSelector
-  );
+  const articles = document.querySelectorAll(optArticleSelector);
 
   let html = '';
 
