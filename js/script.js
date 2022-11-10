@@ -268,8 +268,8 @@ function generateAuthors() {
     //const linkHTML = '<a href="#author-' + author + '">' + author + '</a>';
     const linkHTMLData = { id: author, title: author };
     const linkHTML = templates.authorLink(linkHTMLData);
-    /* [DONE] insert HTML of all the links into the authors wrapper */ s;
-    //authorWrapper.innerHTML = linkHTML;
+    /* [DONE] insert HTML of all the links into the authors wrapper */
+    authorWrapper.innerHTML = linkHTML;
     /* [NEW] check if this link is NOT already in allTags */
     if (!allAuthors[author]) {
       /* [NEW] add tag to allTags object */

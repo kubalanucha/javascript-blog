@@ -420,8 +420,8 @@
     </script>
   
     <script id="template-authorRight-link" type="text/x-handlebars-template">
-      {{#each author}}
-      <li><a href="#author-{{ author }}"><span>{{ author }}</span></a></li>
+      {{#each authors}}
+        <li><a href="#author-{{ author }}"><span>{{ author }} ({{count}})</span></a></li>
       {{/each}}
     </script>
     
